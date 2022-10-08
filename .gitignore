@@ -1,2 +1,5 @@
 # Ignores the .map file in the Sass compiler
 /styles/styles.css.map
+
+# Add img folder to .gitignore
+echo "img" >> .gitignore
