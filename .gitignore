@@ -1,1 +1,2 @@
+# Ignores the .map file in the Sass compiler
 /styles/styles.css.map
