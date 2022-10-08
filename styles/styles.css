@@ -7,7 +7,6 @@
 }
 
 /* || VARIABLES */
-
 :root {
   --COLOR-PRIMARY: #191d2b;
   --COLOR-SECONDARY: #27AE60;
@@ -21,16 +20,16 @@
   --COLOR-GRAY-5: #2A2E35;
   --COLOR-GRAY-6: #12181B;
   --BR-SM-2: 14px;
-  --BOX-SHADOW-1: 0 3px 15px rgba(0, 0, 0, .3)
+  --BOX-SHADOW-1: 0 3px 15px rgba(0, 0, 0, .3) ;
 }
 
 /* || GENERAL STYLES */
 body {
-  background-color: var(--COLOR-PRIMARY);;
-  font-family: 'Poppins', sans-serif;
+  background-color: var(--COLOR-PRIMARY);
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--COLOR-WHITE);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 a {
@@ -58,7 +57,7 @@ section {
 /* || SECTION STYLES */
 .section {
   transform: translateY(-100%);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-color: var(--COLOR-PRIMARY);
 }
 
@@ -66,18 +65,22 @@ section {
   display: none;
   transform: translateY(0) scale(1);
 }
+
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
 }
+
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
 }
+
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
 }
+
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
@@ -94,33 +97,29 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-
-    .active-btn {
-      background-color: var(--COLOR-SECONDARY) !important;
-      transition: all .4s ease-in-out;
-
-      i {
-        color: var(--COLOR-WHITE) !important;
-      }
-    }
-    
-    .control{
-      padding: 1rem;
-      cursor: pointer;
-      background-color: var(--COLOR-GRAY-4);
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0.7rem 0;
-      box-shadow: var(--BOX-SHADOW-1);
-
-      i{
-        font-size: 1.2rem;
-        color: var(--COLOR-GRAY-2);
-        pointer-events: none;
-      }
-    }
 }
+.controlls .active-btn {
+  background-color: var(--COLOR-SECONDARY) !important;
+  transition: all 0.4s ease-in-out;
+}
+.controlls .active-btn i {
+  color: var(--COLOR-WHITE) !important;
+}
+.controlls .control {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--COLOR-GRAY-4);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--BOX-SHADOW-1);
+}
+.controlls .control i {
+  font-size: 1.2rem;
+  color: var(--COLOR-GRAY-2);
+  pointer-events: none;
+}/*# sourceMappingURL=styles.css.map */
