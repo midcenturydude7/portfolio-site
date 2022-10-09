@@ -10,7 +10,8 @@
 
 :root {
   --COLOR-PRIMARY: #191d2b;
-  --COLOR-SECONDARY: #27AE60;
+  --COLOR-SECONDARY: #d312d3;
+  --COLOR-TERTIARY: rgba(211, 18, 211, 0.5);
   --COLOR-WHITE: #FFF;
   --COLOR-BLACK: #000;
   --COLOR-GRAY0: #F8F8F8;
@@ -159,7 +160,7 @@ section {
       transition: all .4s ease-in-out;
       width: 65%;
       height: 100%;
-      background-color: var(--COLOR-SECONDARY);
+      background-color: var(--COLOR-TERTIARY);
       position: absolute;
       left: 0;
       top: 0;
@@ -285,12 +286,6 @@ section {
 .about-stats {
   padding-bottom: 4rem;
   
-  .stat-title {
-    text-transform: uppercase;
-    text-decoration: underline;
-    padding-bottom: .2rem;
-    color: var(--COLOR-SECONDARY);
-  } 
   .progress-bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -357,6 +352,7 @@ section {
           .nodejs {
             width: 20%;
           }
+
           .python {
             width: 75%;
           }
@@ -365,6 +361,93 @@ section {
     }
   }
 }
+
+.stat-title {
+  text-transform: uppercase;
+  padding: 3.5rem 0;
+  color: var(--COLOR-SECONDARY);
+  font-size: 1.4rem;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--COLOR-GRAY-5);
+    transform: translateX(-50%);
+  }
+  
+/*      &::after {
+    content: "<front-end>";
+    margin-left: 0.5rem;
+    color: var(--COLOR-GRAY-3);
+  }      */
+} 
+
+/* || ABOUT - TIMELINE SECTION */
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+
+  .timeline-item {
+    position: relative;
+    padding-left: 3rem;
+    border-left: 1px solid var(--COLOR-GRAY-5);
+
+    .tl-icon {
+      position: absolute;
+      left: -27px;
+      top: 0;
+      background-color: var(--COLOR-SECONDARY);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 1.3rem;
+      }
+    }
+
+    .tl-duration {
+      padding: .2rem .6rem;
+      background-color: var(--COLOR-GRAY-5);
+      /* border-radius: 15px;
+      display: inline-block; */
+      font-size: .8rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      width: 90%
+    }
+
+    h5 {
+      padding: 1rem 0;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      font-weight: 600;
+
+      span {
+        color: var(--COLOR-GRAY-2);
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+    }
+
+    p {
+      color: var(--COLOR-GRAY-2);
+    }
+  }
+}
+
+
 
 /* || UTILITY STYLES */
 .btn-con {
