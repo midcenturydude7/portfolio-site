@@ -518,6 +518,7 @@ section {
   transform: scale(1.1);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
   border: 1px solid var(--COLOR-SECONDARY);
+  border-bottom: 8px double var(--COLOR-SECONDARY);
 }
 .resources-container .resource img {
   width: 100%;
@@ -530,6 +531,7 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .resources-container .resource .resource-text {
+  height: 250px;
   margin-top: -7px;
   padding: 1.1rem;
   border-top: 8px solid var(--COLOR-SECONDARY);
@@ -539,6 +541,7 @@ section {
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+  color: var(--COLOR-GRAY-2);
 }
 .resources-container .resource .resource-text h4:hover {
   color: var(--COLOR-SECONDARY);
@@ -547,6 +550,42 @@ section {
   color: var(--color-gray-2);
   line-height: 2rem;
   padding-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* || CONTACT SECTION */
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+.contact-content-con .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--COLOR-GRAY-5);
+  width: 100%;
+  color: var(--COLOR-WHITE);
+  resize: none;
+}
+.contact-content-con .right-contact .i-c-2 {
+  display: flex;
+}
+.contact-content-con .right-contact .i-c-2 :last-child {
+  margin-left: 1.5rem;
 }
 
 /* || UTILITY STYLES */
