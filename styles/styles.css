@@ -201,6 +201,7 @@ section {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
 }
 .header-content .left-header {
   display: flex;
@@ -762,21 +763,145 @@ section {
   white-space: nowrap;
 }
 
-/* || MEDIA QUERIES - RESPONSIVE DESIGN SETTINGS */
-/* @import './media'; */
+/* ################################################ */
+/* || MEDIA QUERIES - RESPONSIVE DESIGN SETTINGS || */
+/* ################################################ */
+/* || BREAKPOINT: 1432px */
+@media screen and (max-width: 1432px) {
+  header {
+    padding: 0 !important;
+  }
+  .section {
+    padding: 7rem 11rem;
+  }
+  /* CONTACT SECTION */
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+/* || BREAKPOINT: 1070px */
+@media screen and (max-width: 1070px) {
+  .main-title h2 {
+    font-size: 4rem;
+  }
+  .main-title h2 span {
+    font-size: 4rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 5rem;
+  }
+  /* ABOUT SECTION */
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+  /* PORTFOLIO SECTION */
+  .portfolios {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* RESOURCE SECTION */
+  .resources-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* || BREAKPOINT: 970px */
+@media screen and (max-width: 970px) {
+  header {
+    padding: 0;
+  }
+  /* HEADER SECTION */
+  header .right-header {
+    padding: 0 !important;
+  }
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .theme-btn i {
+    font-size: 1.25rem;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+  }
+  .header .left-header .image {
+    margin: 0 auto;
+    width: 75%;
+  }
+  .section {
+    padding: 7rem 6rem;
+  }
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--COLOR-GRAY-5);
+  }
+  .controlls .control {
+    margin: 0.6rem 2rem;
+  }
+}
+/* || BREAKPOINT: 700px */
+@media screen and (max-width: 700px) {
+  .section {
+    padding: 7rem 3rem;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title h2 span {
+    font-size: 3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4rem;
+  }
+}
+/* || BREAKPOINT: 600px */
 @media screen and (max-width: 600px) {
   header {
     padding: 0;
   }
+  /* HEADER SECTION */
   header .right-header {
-    padding: 2rem !important;
+    padding: 0 !important;
   }
   .theme-btn {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
   }
   .theme-btn i {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
   .header-content {
     grid-template-columns: 1fr;
@@ -797,6 +922,7 @@ section {
     margin: 0 auto;
     width: 90%;
   }
+  /* ABOUT SECTION */
   .about-container {
     grid-template-columns: 1fr;
   }
@@ -814,8 +940,45 @@ section {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  /* PORTFOLIO SECTION */
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  /* RESOURCES SECTION */
+  .resources-container {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  /* CONTACT SECTION */
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
   .section {
     padding: 2rem 2.5rem !important;
+  }
+  .main-title h2 {
+    font-size: 2.5rem;
+  }
+  .main-title h2 span {
+    font-size: 2.5rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 3.5rem;
   }
   .controlls {
     top: auto;
