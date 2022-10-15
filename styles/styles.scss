@@ -781,6 +781,7 @@ section {
 .btn-con {
   display: flex;
   align-self: flex-start;
+  white-space: no-wrap;
 }
 
 .main-btn {
@@ -859,6 +860,23 @@ section {
 /* ################################################ */
 /* || MEDIA QUERIES - RESPONSIVE DESIGN SETTINGS || */
 /* ################################################ */
+
+/* || BREAKPOINT: 1523px */
+@media screen and (min-width: 1900px) {
+  header {
+    .header-content {
+      .right-header {
+        .name {
+          width: 80% !important;
+        }
+
+        p {
+          padding-right: 18rem;
+        }
+      }
+    }
+  }
+}
 
 /* || BREAKPOINT: 1522px */
 @media screen and (min-width: 1522px) {
@@ -955,6 +973,19 @@ section {
   /* RESOURCE SECTION */
   .resources-container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* || BREAKPOINT: 1045px */
+@media screen and (max-width: 1045px) {
+  header {
+    .header-content {
+      .right-header {
+        .btn-con {
+          white-space: nowrap !important;
+        }
+      }
+    }
   }
 }
 
@@ -1262,7 +1293,7 @@ section {
     }
   }
 /* || BREAKPOINT: 481px */
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 540px) {
   /* DARK MODE TOGGLE BTN */
   .theme-btn {
     width: 40px;
