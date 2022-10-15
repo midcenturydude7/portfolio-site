@@ -405,11 +405,6 @@ section {
   font-size: 1.4rem;
   text-align: center;
   position: relative;
-  /*      &::after {
-      content: "<front-end>";
-      margin-left: 0.5rem;
-      color: var(--COLOR-GRAY-3);
-    }      */
 }
 .stat-title::before {
   content: "";
