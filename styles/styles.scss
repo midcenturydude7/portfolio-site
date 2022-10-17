@@ -1039,7 +1039,7 @@ section {
 }
 
 /* || **BREAKPOINT: 1024px X 768px (TABLET LANDSCAPE) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1025px) {
   /* DARK MODE TOGGLE BTN */
   .theme-btn {
     width: 70px;
@@ -1280,7 +1280,7 @@ section {
   /* HEADER SECTION */
   header {
     .header-content {
-      margin-left: 5rem;
+      /* margin-left: 5rem; */
     }
   } 
 }
@@ -1476,7 +1476,7 @@ section {
 }
 
 /* || **BREAKPOINT: 280px (GALAXY FOLD) */
-@media screen and (min-width: 279px) {
+@media screen and (min-width: 279px) and (max-width: 480px) {
   .theme-btn {
     width: 30px !important;
     height: 30px !important;
