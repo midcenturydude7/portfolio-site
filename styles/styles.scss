@@ -1038,7 +1038,7 @@ section {
   }
 }
 
-/* || **BREAKPOINT: 1024px X 768px (LANDSCAPE) */
+/* || **BREAKPOINT: 1024px X 768px (TABLET LANDSCAPE) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* DARK MODE TOGGLE BTN */
   .theme-btn {
@@ -1263,24 +1263,54 @@ section {
   }
 }
 
-/* || **BREAKPOINT: 540px (SURFACE DUO) */
-@media screen and (min-width: 540px) and (max-width: 767px) {
+/* || **BREAKPOINT: 540px (SURFACE DUO LANDSCAPE) */
+@media screen and (min-width: 719px) and (min-height: 539px) and (orientation: landscape) {
   /* DARK MODE TOGGLE BTN */
   .theme-btn {
-    width: 50px;
-    height: 50px;
-    top: 4%;
+    width: 70px !important;
+    height: 70px !important;
+    top: 4% !important;
+    right: 5% !important;
+
+    i {
+      font-size: 1.1rem !important;
+    }
+  }
+
+  /* HEADER SECTION */
+  header {
+    .header-content {
+      margin-left: 5rem;
+    }
+  } 
+}
+
+/* || **BREAKPOINT: 540px (SURFACE DUO PORTRAIT) */
+@media screen and (min-width: 539px) and (min-height: 719px) and (orientation: portrait) {
+  /* DARK MODE TOGGLE BTN */
+  .theme-btn {
+    width: 70px !important;
+    height: 70px !important;
+    top: 4% !important;
     right: 5%;
 
     i {
-      font-size: 1.25rem;
+      font-size: 1.1rem !important;
     }
   }
   /* HEADER SECTION: HERO IMAGE */
   .header-content {
     .left-header {
       .image {
-        margin: -5rem auto 0;
+        margin: -5rem auto 0 !important;
+        width: 35% !important;
+
+      }
+    }
+
+    .right-header {
+      p {
+        padding-right: 3rem;
       }
     }
   }
@@ -1441,6 +1471,78 @@ section {
 
     .control {
       margin: 1rem .3rem;
+    }
+  }
+}
+
+/* || **BREAKPOINT: 280px (GALAXY FOLD) */
+@media screen and (min-width: 279px) {
+  .theme-btn {
+    width: 30px !important;
+    height: 30px !important;
+    top: 2%;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+  
+  header {
+    margin-left: -1rem !important;
+
+    .right-header {
+      p {
+        padding-right: 1rem;
+      }
+
+      .btn-con {
+        margin-left: -0.5rem !important;
+      }
+    }
+  }
+}
+
+/* || **BREAKPOINT: 916px (CELL LANDSCAPE) */
+@media screen and (max-width: 916px) and (min-height: 390px) and (orientation: landscape) {
+  /* DARK MODE TOGGLE BTN */
+  .theme-btn {
+    width: 30px !important;
+    height: 30px !important;
+    top: 6%;
+    right: 1.5%;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  /* HEADER SECTION */
+  header {
+    .left-header {
+      .image {
+        img {
+          width: 75% !important;
+          height: auto;
+          margin: -9rem auto 0 1rem;
+        }
+      }
+    }
+
+    .right-header {
+      margin: 2rem auto 3rem;
+    }
+  }
+  /* NAV SECTION */
+  controlls {
+    width: 80%;
+
+    .control {
+      width: 10px !important;
+      height: 10px !important;
+
+      i {
+        font-size: 2px !important;
+      }
     }
   }
 }
