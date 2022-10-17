@@ -1280,7 +1280,15 @@ section {
   /* HEADER SECTION */
   header {
     .header-content {
-      /* margin-left: 5rem; */
+      .left-header {
+        .image {
+          margin-top: 3rem;
+        }
+      }
+
+      .right-header {
+        margin-left: 5rem;
+      }
     }
   } 
 }
@@ -1299,18 +1307,19 @@ section {
     }
   }
   /* HEADER SECTION: HERO IMAGE */
-  .header-content {
-    .left-header {
-      .image {
-        margin: -5rem auto 0 !important;
-        width: 35% !important;
-
+  header {
+    .header-content {
+      .left-header {
+        .image {
+          margin: -5rem auto 0 !important;
+          width: 35% !important;
+        }
       }
-    }
 
-    .right-header {
-      p {
-        padding-right: 3rem;
+      .right-header {
+        p {
+          padding-right: 1rem;
+        }
       }
     }
   }
@@ -1322,8 +1331,8 @@ section {
       width: 70%;
     }
   }
-/* || BREAKPOINT: 481px */
-@media screen and (max-width: 540px) {
+/* || BREAKPOINT: 539px */
+@media screen and (max-width: 539px) {
   /* DARK MODE TOGGLE BTN */
   .theme-btn {
     width: 40px;
@@ -1353,7 +1362,7 @@ section {
           margin: -5rem auto -3rem;
 
           img {
-            width: 150% !important;
+            width: 125% !important;
             box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8) !important;
             margin-left: -2rem;
           }

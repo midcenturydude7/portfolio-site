@@ -1091,8 +1091,11 @@ section {
     font-size: 1.1rem !important;
   }
   /* HEADER SECTION */
-  header .header-content {
-    /* margin-left: 5rem; */
+  header .header-content .left-header .image {
+    margin-top: 3rem;
+  }
+  header .header-content .right-header {
+    margin-left: 5rem;
   }
 }
 /* || **BREAKPOINT: 540px (SURFACE DUO PORTRAIT) */
@@ -1108,20 +1111,20 @@ section {
     font-size: 1.1rem !important;
   }
   /* HEADER SECTION: HERO IMAGE */
-  .header-content .left-header .image {
+  header .header-content .left-header .image {
     margin: -5rem auto 0 !important;
     width: 35% !important;
   }
-  .header-content .right-header p {
-    padding-right: 3rem;
+  header .header-content .right-header p {
+    padding-right: 1rem;
   }
 }
 .right-header .name {
   width: 70%;
 }
 
-/* || BREAKPOINT: 481px */
-@media screen and (max-width: 540px) {
+/* || BREAKPOINT: 539px */
+@media screen and (max-width: 539px) {
   /* DARK MODE TOGGLE BTN */
   .theme-btn {
     width: 40px;
@@ -1147,7 +1150,7 @@ section {
     margin: -5rem auto -3rem;
   }
   header .header-content .left-header .image img {
-    width: 150% !important;
+    width: 125% !important;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8) !important;
     margin-left: -2rem;
   }
