@@ -1263,7 +1263,34 @@ section {
   }
 }
 
-/* || **BREAKPOINT: 721px (SURFACE DUO LANDSCAPE) */
+/*  || BREAKPOINT: 737px (iPHONE 6/7/8: LANDSCAPE) */
+@media screen and (max-width: 737px) and (orientation: landscape) {
+  /* DARK MODE TOGGLE BTN */
+  .theme-btn {
+    width: 50px !important;
+    height: 50px !important;
+    right: 3% !important;
+
+    i {
+      font-size: 1.4rem !important;
+    }
+  }
+
+  /* HEADER SECTION */
+  header {
+    .header-content {
+      .left-header {
+        .image {
+          width: 50% !important;
+          margin: 1.5rem auto 0;
+        }
+      }
+    }
+  }
+
+}
+
+/* || **BREAKPOINT: 721px (SURFACE DUO: LANDSCAPE) */
 @media screen and (max-width: 721px) and (max-height: 541px) and (orientation: landscape) {
   /* DARK MODE TOGGLE BTN */
   .theme-btn {
@@ -1679,50 +1706,3 @@ section {
     }
   }
 }
-
-/* || **BREAKPOINT: 737px (iPHONE 6/7/8 PLUS: LANDSCAPE) */
-/* @media screen and (max-width: 737px) and (max-height: 415px) and (orientation: landscape) { */
-  /* DARK MODE TOGGLE BTN */
-/*   .main-content {
-    .theme-btn {
-      width: 30px;
-      height: 30px;
-      top: 6%;
-      right: 1.5%;
-
-      i {
-        font-size: 1.1rem;
-      }
-    }
-  } */
-
-  /* HEADER SECTION */
-/*   header {
-    .left-header {
-      .image {
-        img {
-          width: 75% !important;
-          height: auto !important;
-          margin: -9rem auto 0 1rem;
-        }
-      }
-    }
-
-    .right-header {
-      margin: 2rem auto 3rem;
-    }
-  } */
-  /* NAV SECTION */
-/*   controlls {
-    width: 80%;
-
-    .control {
-      width: 10px !important;
-      height: 10px !important;
-
-      i {
-        font-size: 2px !important;
-      }
-    }
-  }
-} */
