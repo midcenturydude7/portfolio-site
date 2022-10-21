@@ -618,11 +618,12 @@ section {
     
     &:hover {
       box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
-      transition: all .4s ease-in-out;
 
       img {
         filter: grayscale(0);
         opacity: 0.5;
+        transform: scale(1.1, 1.1);
+        transition: all .8s ease-in-out;
       }
 
       .resource-text {
@@ -643,11 +644,6 @@ section {
       border-top-right-radius: 5px;
       filter: grayscale(100%);
       transition: all .4s ease-in-out;
-      z-index: 2;
-
-      &:hover {
-        transform: scaleY(1.1);
-      }
     }
     
     .resource-text {
@@ -656,7 +652,6 @@ section {
       padding: 1.1rem;
       border: 1px solid var(--COLOR-GRAY-4);
       background-color: var(--COLOR-GRAY-5);
-      z-index: 1;
 
       h4 {
         font-size: 1.5rem;
