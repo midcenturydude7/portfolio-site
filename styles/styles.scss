@@ -624,6 +624,15 @@ section {
         filter: grayscale(0);
         opacity: 0.5;
       }
+
+      .resource-text {
+        transform: scaleY(1.5);
+        transition: all 1.1s ease-in-out;
+
+        p {
+          display: inline;
+        }
+      }
     }
     
     img {
@@ -634,9 +643,10 @@ section {
       border-top-right-radius: 5px;
       filter: grayscale(100%);
       transition: all .4s ease-in-out;
+      z-index: 2;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scaleY(1.1);
       }
     }
     
@@ -644,7 +654,9 @@ section {
       height: 10rem;
       margin-top: -7px;
       padding: 1.1rem;
-      border-left: 1px solid var(--COLOR-BLACK);
+      border: 1px solid var(--COLOR-GRAY-4);
+      background-color: var(--COLOR-GRAY-5);
+      z-index: 1;
 
       h4 {
         font-size: 1.5rem;
@@ -662,7 +674,7 @@ section {
         color: var(--color-gray-2);
         line-height: 2rem;
         padding-bottom: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.9rem;        
       }
     }
   }
