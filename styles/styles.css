@@ -553,7 +553,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  margin-top: 4rem;
+  margin: 4rem 0 3rem -5rem;
 }
 .resources-container .resource {
   position: relative;
@@ -561,6 +561,9 @@ section {
   border-radius: 5px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in-out;
+  min-width: 25rem;
+  margin: 0;
+  overflow: hidden;
 }
 .resources-container .resource:hover {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
@@ -569,10 +572,7 @@ section {
 }
 .resources-container .resource:hover img {
   filter: grayscale(0);
-  transform: scale(1.1);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
-  border: 1px solid var(--COLOR-SECONDARY);
-  border-bottom: 8px double var(--COLOR-SECONDARY);
+  opacity: 0.5;
 }
 .resources-container .resource img {
   width: 100%;
@@ -584,11 +584,14 @@ section {
   filter: grayscale(100%);
   transition: all 0.4s ease-in-out;
 }
+.resources-container .resource img:hover {
+  transform: scale(1.1);
+}
 .resources-container .resource .resource-text {
-  height: 250px;
+  height: 10rem;
   margin-top: -7px;
   padding: 1.1rem;
-  border-top: 8px solid var(--COLOR-SECONDARY);
+  border-left: 1px solid var(--COLOR-BLACK);
 }
 .resources-container .resource .resource-text h4 {
   font-size: 1.5rem;
@@ -601,6 +604,7 @@ section {
   color: var(--COLOR-SECONDARY);
 }
 .resources-container .resource .resource-text p {
+  display: none;
   color: var(--color-gray-2);
   line-height: 2rem;
   padding-bottom: 1rem;
