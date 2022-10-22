@@ -12,6 +12,7 @@
   --COLOR-PRIMARY: #191d2b;
   --COLOR-SECONDARY: #d312d3;
   --COLOR-TERTIARY: rgba(211, 18, 211, 0.5);
+  --COLOR-FOURTH: #EB3CEB;
   --COLOR-WHITE: #FFF;
   --COLOR-BLACK: #000;
   --COLOR-GRAY0: #F8F8F8;
@@ -30,6 +31,7 @@
   --COLOR-PRIMARY: #FFF;
   --COLOR-SECONDARY: #f56692;
   --COLOR-TERTIARY: rgba(245, 102, 146, 0.5);
+  --COLOR-FOURTH: #f33971;
   --COLOR-WHITE: #454E56;
   --COLOR-BLACK: #000;
   --COLOR-GRAY0: #1f1c1c;
@@ -608,32 +610,33 @@ section {
   
   .resource {
     position: relative;
-    background-color: var(--COLOR-GRAY-5);
+    background-color: var(--COLOR-PRIMARY);
     border-radius: 5px;
     border: 1px solid var(--COLOR-GRAY-4);
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
     transition: all .4s ease-in-out;
     min-width: 25rem;
+    min-height: 462px;
     margin: 0;
     overflow: hidden;
     
     &:hover {
-      box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.5);
 
       img {
         height: 200px;
-        filter: grayscale(0);
-        opacity: 0.3;
-        transform: scale(1.3, 1.3);
-        transition: height 1s ease-in-out;
+        filter: grayscale(100%) blur(2px);
+        opacity: 0.5;
+        transform: scale(1.5, 1.5);
+        transition: height transform .8s ease;
       }
 
       .resource-text {
-        transition: height 1s ease-in-out;
+        transition: height .8s ease-in-out;
         border-top: 1px solid var(--COLOR-GRAY-4);
 
         h4 {
-          text-size-adjust: none;
+          color: var(--COLOR-SECONDARY);
         }
 
         p {
@@ -651,8 +654,8 @@ section {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       border-bottom: 1px solid var(--COLOR-GRAY-4);
-      filter: grayscale(100%);
-      transition: all .4s ease-in-out;
+      filter: brightness(75%) grayscale(0);
+      transition: all 1s ease;
     }
     
     .resource-text {
@@ -664,7 +667,7 @@ section {
       background-image: linear-gradient(
         to bottom, 
         var(--COLOR-GRAY-5), 
-        var(--COLOR-GRAY-4));
+        var(--COLOR-PRIMARY));
       z-index: 1;
 
       &::before {
@@ -676,8 +679,8 @@ section {
         left: 0;
         background-image: linear-gradient(
           to top, 
-          var(--COLOR-GRAY-5), 
-          var(--COLOR-GRAY-4));
+          var(--COLOR-PRIMARY), 
+          var(--COLOR-GRAY-5));
         z-index: -1;
         transition: opacity 0.5s linear;
         opacity: 0;
@@ -699,15 +702,26 @@ section {
         color: var(--COLOR-GRAY-2);
 
         &:hover {
-          color: var(--COLOR-SECONDARY);
+          color: var(--COLOR-FOURTH);
+          transition: all .4s ease-in-out;
         }
+
       }
       p {
         display: none;
         color: var(--color-gray-2);
         line-height: 2rem;
         padding-bottom: 1rem;
-        font-size: 0.9rem;        
+        font-size: .9rem;   
+        
+        span {
+          color: var(--COLOR-SECONDARY);
+
+          &:hover {
+            color: var(--COLOR-FOURTH);
+            transition: all .4s ease-in-out;
+          }
+        }
       }
     }
   }
