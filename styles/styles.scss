@@ -602,11 +602,16 @@ section {
 }
 
 /* || RESOURCES */
+.resources-content {
+  min-width: 50%;
+  max-width: 75%;
+}
+
 .resources-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  margin: 4rem 0 3rem -5rem;
+  margin: 4rem 0 3rem;
   
   .resource {
     position: relative;
