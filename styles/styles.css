@@ -608,6 +608,22 @@ section {
   filter: brightness(75%) grayscale(0);
   transition: all 1s ease;
 }
+.resources-content .resources-container .resource .banner-block {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 0.25rem 1rem;
+  /* border: 1px solid var(--COLOR-GRAY-4); */
+  color: var(--COLOR-GRAY-6);
+  text-transform: uppercase;
+  background-color: var(--COLOR-TERTIARY);
+  border-radius: 5px;
+  font-size: 0.95rem;
+  text-align: center;
+  min-width: 5rem;
+  letter-spacing: 0.15rem;
+  font-weight: 700;
+}
 .resources-content .resources-container .resource .resource-text {
   position: relative;
   height: 10rem;
