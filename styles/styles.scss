@@ -671,12 +671,13 @@ section {
         color: var(--COLOR-GRAY-6);
         text-transform: uppercase;
         background-color: var(--COLOR-TERTIARY);
+        border-right: 7px solid rgba(245, 245, 245, 0.5);
         border-radius: 5px;
         font-size: 0.95rem;
         text-align: center;
         min-width: 5rem;
         letter-spacing: 0.15rem;
-        font-weight: 700;
+        font-weight: 500;
       }
 
       .resource-text {
