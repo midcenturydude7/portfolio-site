@@ -948,6 +948,20 @@ section {
 /* || MEDIA QUERIES - RESPONSIVE DESIGN SETTINGS || */
 /* ################################################ */
 
+/* BREAKPOINT: 1950px */
+@media screen and (max-width: 1950px) {
+  .resources-container {
+    grid-gap: 3rem 0.5rem !important;
+  }
+}
+
+/* || BREAKPOINT: 1850px */
+@media screen and (max-width: 1850px) {
+  .resources-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 /* || BREAKPOINT: 1523px */
 @media screen and (min-width: 1900px) {
   header {
@@ -1011,6 +1025,25 @@ section {
   }
 }
 
+/* || BREAKPOINT: 1245px */
+@media screen and (max-width: 1245px) {
+  .resources-container {
+    grid-gap: 3rem 0.5rem !important;
+
+
+    .resource {
+      min-width: auto;
+    }
+  }
+}
+
+/* || BREAKPOINT: 1225px */
+@media screen and (max-width: 1225px) {
+  .resources-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* || BREAKPOINT: 1201px */
 @media screen and (min-width: 1201px) {
   header {
@@ -1054,11 +1087,6 @@ section {
 
   /* PORTFOLIO SECTION */
   .portfolios {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* RESOURCE SECTION */
-  .resources-container {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -1121,6 +1149,13 @@ section {
       .btn-con {
         margin-top: 1rem;
       }
+    }
+  }
+
+  /* RESOURCES SECTION */
+  .resources-container {
+    .resource {
+      margin-left: 3.5rem !important;
     }
   }
 }
