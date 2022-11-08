@@ -66,11 +66,9 @@ header {
 
 section {
   min-height: 100vh;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 3rem 18rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* || TOP-LEVEL SECTION STYLES */
@@ -215,13 +213,14 @@ section {
 }
 .header-content .left-header {
   display: flex;
-  align-items: center;
+  justify-content: center;
   position: relative;
+  min-width: 300px;
 }
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
   width: 65%;
-  height: 100%;
+  min-height: 100%;
   background-color: var(--COLOR-TERTIARY);
   position: absolute;
   left: 0;
@@ -231,16 +230,12 @@ section {
           clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
 .header-content .left-header .image {
-  height: 125%;
-  width: auto;
-  margin-left: 10rem;
   transition: all 0.4s ease-in-out;
   transform: translateY(20%);
 }
 .header-content .left-header .image img {
-  border-radius: 50%;
+  border-radius: 100%;
   width: 100%;
-  height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(100%);
@@ -258,8 +253,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 18rem;
-  /* margin-left: -2rem */
+  padding: 0 15em 0 1em;
 }
 .header-content .right-header .name {
   font-size: 3rem;
@@ -276,7 +270,7 @@ section {
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 3.5rem 0 5rem;
+  padding: 3.5em 0;
 }
 .about-container .right-about {
   display: grid;
@@ -323,7 +317,7 @@ section {
   background-color: var(--COLOR-GRAY-5);
 }
 .about-container .left-about {
-  padding-right: 5rem;
+  padding-right: 3em;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -822,6 +816,7 @@ section {
 
 .main-title {
   text-align: center;
+  display: none;
 }
 .main-title h2 {
   position: relative;
@@ -847,646 +842,4 @@ section {
 
 /* ################################################ */
 /* || MEDIA QUERIES - RESPONSIVE DESIGN SETTINGS || */
-/* ################################################ */
-/* BREAKPOINT: 1950px */
-@media screen and (max-width: 1950px) {
-  .resources-container {
-    grid-gap: 3rem 0.5rem !important;
-  }
-}
-/* || BREAKPOINT: 1850px */
-@media screen and (max-width: 1850px) {
-  .resources-container {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-/* || BREAKPOINT: 1523px */
-@media screen and (min-width: 1900px) {
-  header .header-content .right-header .name {
-    width: 80% !important;
-  }
-  header .header-content .right-header p {
-    padding-right: 18rem;
-  }
-}
-/* || BREAKPOINT: 1522px */
-@media screen and (min-width: 1522px) {
-  header .header-content .right-header .name {
-    width: 80% !important;
-  }
-  header .header-content .right-header p {
-    max-width: 110% !important;
-  }
-}
-/* || BREAKPOINT: 1432px */
-@media screen and (max-width: 1432px) {
-  header {
-    padding: 0 !important;
-  }
-  .section {
-    padding: 7rem 11rem;
-  }
-  /* CONTACT SECTION */
-  .contact-content-con {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
-  }
-}
-/* || BREAKPOINT: 1245px */
-@media screen and (max-width: 1245px) {
-  .resources-container {
-    grid-gap: 3rem 0.5rem !important;
-  }
-  .resources-container .resource {
-    min-width: auto;
-  }
-}
-/* || BREAKPOINT: 1225px */
-@media screen and (max-width: 1225px) {
-  .resources-container {
-    grid-template-columns: 1fr !important;
-  }
-}
-/* || BREAKPOINT: 1201px */
-@media screen and (min-width: 1201px) {
-  header .header-content .right-header .name {
-    width: 100%;
-  }
-  header .header-content .right-header p {
-    width: 125% !important;
-  }
-}
-/* || BREAKPOINT: 1070px */
-@media screen and (max-width: 1070px) {
-  .main-title h2 {
-    font-size: 4rem;
-  }
-  .main-title h2 span {
-    font-size: 4rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 5rem;
-  }
-  /* ABOUT SECTION */
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-  .about-container .right-about {
-    padding-top: 2.5rem;
-  }
-  /* PORTFOLIO SECTION */
-  .portfolios {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-/* || BREAKPOINT: 1045px */
-@media screen and (max-width: 1045px) {
-  header .header-content .right-header .btn-con {
-    white-space: nowrap !important;
-  }
-}
-/* || BREAKPOINT: 1025px */
-@media screen and (min-width: 1025px) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 70px;
-    height: 70px;
-    top: 3%;
-    right: 2.5%;
-  }
-  .theme-btn i {
-    font-size: 1.8rem;
-  }
-  /* HEADER SECTION */
-  header {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  header .header-content .left-header .image {
-    width: 65% !important;
-    height: auto !important;
-    margin: -15rem auto 0 !important;
-  }
-  header .header-content .left-header .image img {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8) !important;
-  }
-  header .right-header .name {
-    width: 150%;
-  }
-  header .right-header p {
-    width: 150%;
-  }
-  header .right-header .btn-con {
-    margin-top: 1rem;
-  }
-  /* RESOURCES SECTION */
-  .resources-container .resource {
-    margin-left: 3.5rem !important;
-  }
-}
-/* || **BREAKPOINT: 1024px X 768px (TABLET LANDSCAPE) */
-@media screen and (min-width: 767px) and (max-width: 1025px) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 70px;
-    height: 70px;
-    top: 3%;
-    right: 6%;
-  }
-  .theme-btn i {
-    font-size: 1.8rem;
-  }
-  /* HEADER SECTION */
-  header {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  header .header-content {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    min-height: 100vh;
-  }
-  header .header-content .left-header {
-    display: flex !important;
-    align-items: center;
-    position: relative;
-  }
-  header .header-content .left-header .h-shape {
-    display: inline-block;
-    height: 100%;
-    width: 90%;
-  }
-  header .header-content .left-header .image {
-    width: 65% !important;
-    height: auto !important;
-    margin: -5rem auto 0 !important;
-  }
-  header .header-content .left-header .image img {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8) !important;
-  }
-  header .right-header {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: -2rem;
-    padding-right: 18rem;
-  }
-  header .right-header .name {
-    font-size: 2.5rem !important;
-    width: 140%;
-  }
-  header .right-header p {
-    width: 145%;
-    padding-bottom: 1rem;
-  }
-  .controlls {
-    position: fixed !important;
-    z-index: 10;
-    top: 50%;
-    right: 6.5% !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-  }
-  .controlls .active-btn {
-    background-color: var(--COLOR-SECONDARY) !important;
-    transition: all 0.4s ease-in-out;
-  }
-  .controlls .active-btn i {
-    color: var(--COLOR-WHITE) !important;
-  }
-  .controlls .control {
-    padding: 1rem;
-    cursor: pointer;
-    background-color: var(--COLOR-GRAY-4);
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.7rem 0;
-    box-shadow: var(--BOX-SHADOW-1);
-  }
-  .controlls .control i {
-    font-size: 1.2rem;
-    color: var(--COLOR-GRAY-2);
-    pointer-events: none;
-    transition: all 0.4s ease-in-out;
-  }
-  .controlls .control:hover {
-    background-color: var(--COLOR-WHITE);
-    transition: all 0.4s ease-in-out;
-    border: 1px solid var(--COLOR-SECONDARY);
-  }
-  .controlls .control:hover i {
-    color: var(--COLOR-PRIMARY);
-  }
-}
-/* || BREAKPOINT: 768px */
-@media screen and (max-width: 767px) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 50px;
-    height: 50px;
-    top: 3%;
-    right: 6%;
-  }
-  .theme-btn i {
-    font-size: 1.4rem;
-  }
-  /* HEADER SECTION */
-  header {
-    margin: 2rem auto 0 !important;
-    padding: 0 !important;
-  }
-  header .header-content {
-    grid-template-columns: 1fr;
-    padding-bottom: 10rem;
-  }
-  header .left-header .h-shape {
-    display: none;
-  }
-  header .left-header .image {
-    width: 35% !important;
-    height: auto !important;
-    margin-top: -5.5rem;
-  }
-  header .left-header .image img {
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8) !important;
-  }
-  header .right-header {
-    grid-row: 1;
-    width: 85%;
-    margin: 0 auto 0 5rem;
-    padding: 0 !important;
-  }
-  header .right-header .name {
-    font-size: 2.25rem !important;
-  }
-  header .right-header p {
-    width: 80%;
-  }
-  header .right-header .btn-con {
-    white-space: nowrap;
-    margin: 1rem 0 5rem;
-  }
-  .header .left-header {
-    margin: 0 auto;
-    width: 90%;
-  }
-  .section {
-    padding: 7rem 3rem;
-  }
-  .about-stats .progress-bars {
-    grid-template-columns: 1fr;
-  }
-  .main-title h2 {
-    font-size: 3rem;
-  }
-  .main-title h2 span {
-    font-size: 3rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 4rem;
-  }
-  .controlls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--COLOR-GRAY-5);
-  }
-  .controlls .control {
-    margin: 1rem;
-  }
-}
-/*  || BREAKPOINT: 737px (iPHONE 6/7/8: LANDSCAPE) */
-@media screen and (max-width: 737px) and (orientation: landscape) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 50px !important;
-    height: 50px !important;
-    right: 3% !important;
-  }
-  .theme-btn i {
-    font-size: 1.4rem !important;
-  }
-  /* HEADER SECTION */
-  header .header-content .left-header .image {
-    width: 50% !important;
-    margin: 1.5rem auto 0;
-  }
-}
-/* || **BREAKPOINT: 721px (SURFACE DUO: LANDSCAPE) */
-@media screen and (max-width: 721px) and (max-height: 541px) and (orientation: landscape) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 70px !important;
-    height: 70px !important;
-    top: 4% !important;
-    right: 5% !important;
-  }
-  .theme-btn i {
-    font-size: 1.8rem !important;
-  }
-  /* HEADER SECTION */
-  header .header-content .left-header .image {
-    margin-top: 5.5rem;
-  }
-  header .header-content .right-header {
-    width: 90%;
-    margin: auto 5rem;
-  }
-}
-/* || **BREAKPOINT: 668px (iPHONE SE: LANDSCAPE) */
-@media screen and (max-width: 668px) and (max-height: 376px) and (orientation: landscape) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 50px !important;
-    height: 50px !important;
-    top: 4% !important;
-    right: 5% !important;
-  }
-  .theme-btn i {
-    font-size: 1.4rem !important;
-  }
-  /* HEADER SECTION */
-  header .header-content .left-header .image {
-    margin-top: -5.5rem;
-  }
-  header .header-content .left-header .image img {
-    width: 90% !important;
-  }
-  header .header-content .right-header {
-    width: 100% !important;
-  }
-}
-/* || **BREAKPOINT: 481px (iPHONE 4: LANDSCAPE) */
-@media screen and (max-width: 481px) and (max-height: 321px) {
-  header .header-content .left-header .image {
-    margin-top: -5.5rem !important;
-  }
-  header .header-content .right-header p {
-    padding-right: 3rem;
-  }
-}
-/* || **BREAKPOINT: 540px (SURFACE DUO PORTRAIT) */
-@media screen and (min-width: 539px) and (max-height: 721px) and (orientation: portrait) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 50px !important;
-    height: 50px !important;
-    top: 4% !important;
-    right: 5%;
-  }
-  .theme-btn i {
-    font-size: 1.5rem !important;
-  }
-  /* HEADER SECTION: HERO IMAGE */
-  header .header-content .left-header .image {
-    margin: -5rem auto 0 !important;
-    width: 35% !important;
-  }
-  header .header-content .right-header p {
-    padding-right: 1rem;
-  }
-}
-.right-header .name {
-  width: 70%;
-}
-
-/* || BREAKPOINT: 539px */
-@media screen and (max-width: 539px) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 40px;
-    height: 40px;
-    top: 3%;
-    right: 5%;
-  }
-  .theme-btn i {
-    font-size: 1.1rem;
-  }
-  /* HEADER SECTION */
-  header {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  header .header-content {
-    grid-template-columns: 1fr;
-  }
-  header .header-content .left-header .h-shape {
-    display: none;
-  }
-  header .header-content .left-header .image {
-    margin: -5rem auto -3rem;
-  }
-  header .header-content .left-header .image img {
-    width: 125% !important;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8) !important;
-    margin-left: -2rem;
-  }
-  header .header-content .right-header {
-    grid-row: 1;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 !important;
-  }
-  header .header-content .right-header .name {
-    width: 100%;
-    font-size: 2.25rem !important;
-  }
-  header .header-content .right-header p {
-    width: 110%;
-  }
-  header .header-content .right-header .btn-con {
-    white-space: nowrap;
-  }
-  /* ABOUT SECTION */
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-  .about-container .right-about {
-    grid-template-columns: 1fr;
-    padding-top: 2.5rem;
-  }
-  .about-container .left-about {
-    padding-right: 0;
-  }
-  .about-container .left-about p {
-    padding-left: 0;
-  }
-  .timeline {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
-  .about-stats .progress-bars {
-    grid-template-columns: 1fr;
-  }
-  /* PORTFOLIO SECTION */
-  .portfolios {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
-  /* RESOURCES SECTION */
-  .resources-container {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
-  /* CONTACT SECTION */
-  .contact-content-con {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
-  }
-  .section {
-    padding: 2rem 2.5rem !important;
-  }
-  .main-title h2 {
-    font-size: 2.5rem;
-  }
-  .main-title h2 span {
-    font-size: 2.5rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 3.5rem;
-  }
-  /* NAV SECTION */
-  .controlls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--COLOR-GRAY-5);
-  }
-  .controlls .control {
-    margin: 1rem 0.3rem;
-  }
-}
-/* || BREAKPOINT: 359px (CELL: PORTRAIT */
-@media screen and (min-width: 359px) and (max-width: 415px) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 60px !important;
-    height: 60px !important;
-    top: 3%;
-    right: 7%;
-  }
-  .theme-btn i {
-    font-size: 1.8rem !important;
-  }
-  /* HEADER SECTION */
-  header .header-content .left-header .image {
-    width: 60% !important;
-    margin: -5rem auto 0.25rem !important;
-  }
-  header .header-content .right-header p {
-    width: 95%;
-  }
-}
-/* || BREAKPOINT: 652px (GALAXY FOLD: LANDSCAPE */
-@media screen and (min-width: 652px) and (max-height: 281px) and (orientation: landscape) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 50px !important;
-    height: 50px !important;
-    top: 5%;
-  }
-  .theme-btn i {
-    font-size: 1.5rem;
-  }
-  /* HEADER SECTION */
-  header .header-content .left-header .image {
-    width: 35% !important;
-    margin: -5rem auto 1rem;
-  }
-}
-/* || **BREAKPOINT: 280px (GALAXY FOLD: PORTRAIT) */
-@media screen and (min-width: 279px) and (max-width: 321px) {
-  /* DARK MODE TOGGLE BTN */
-  .theme-btn {
-    width: 30px !important;
-    height: 30px !important;
-    top: 2%;
-  }
-  .theme-btn i {
-    font-size: 1rem;
-  }
-  /* HEADER SECTION */
-  header {
-    margin-left: -1rem !important;
-  }
-  header .header-content .left-header {
-    margin-left: 2rem;
-  }
-  header .header-content .left-header .image {
-    width: 65% !important;
-  }
-  header .header-content .right-header p {
-    padding-right: 1rem;
-  }
-  header .header-content .right-header .btn-con {
-    margin-left: -0.5rem !important;
-  }
-}
-/* || **BREAKPOINT: 916px (CELL LANDSCAPE) */
-@media screen and (max-width: 916px) and (min-height: 390px) and (orientation: landscape) {
-  /* DARK MODE TOGGLE BTN */
-  .main-content .theme-btn {
-    width: 30px;
-    height: 30px;
-    top: 6%;
-    right: 1.5%;
-  }
-  .main-content .theme-btn i {
-    font-size: 1rem;
-  }
-  /* HEADER SECTION */
-  header .left-header .image img {
-    width: 75% !important;
-    height: auto !important;
-    margin: -9rem auto 0 1rem;
-  }
-  header .right-header {
-    margin: 2rem auto 3rem;
-  }
-  /* NAV SECTION */
-  controlls {
-    width: 80%;
-  }
-  controlls .control {
-    width: 10px !important;
-    height: 10px !important;
-  }
-  controlls .control i {
-    font-size: 2px !important;
-  }
-}/*# sourceMappingURL=styles.css.map */
+/* ################################################ *//*# sourceMappingURL=styles.css.map */
